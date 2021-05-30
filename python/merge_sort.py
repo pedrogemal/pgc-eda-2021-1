@@ -40,7 +40,7 @@ def merge_sort(arr: List[int]) -> None:
 
 if __name__ == '__main__':
     for i in range(50):
-        array = SET1()
+        array = set1()
         start = time.time() * 1000
         merge_sort(array)
         end = time.time() * 1000

@@ -19,7 +19,7 @@ def selection_sort(array: List[T]) -> None:
 
 if __name__ == '__main__':
     for i in range(50):
-        array = SET1()
+        array = set1()
         start = time.time() * 1000
         selection_sort(array)
         end = time.time() * 1000

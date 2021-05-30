@@ -22,7 +22,7 @@ def quick_sort(arr, low, high):
 
 if __name__ == '__main__':
     for i in range(50):
-        array = SET1()
+        array = set1()
         n = len(array)
         start = time.time() * 1000
         quick_sort(array, 0, n - 1)
