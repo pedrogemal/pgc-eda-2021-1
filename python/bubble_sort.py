@@ -3,6 +3,7 @@
 import time
 from constants import *
 
+
 def bubble_sort(array):
     n = len(array)
     for i in range(n):
@@ -14,11 +15,12 @@ def bubble_sort(array):
         if not swapped:
             break
 
+
 if __name__ == '__main__':
-    for a in range(50):
-        array = set1()
+    for z in range(50):
+        set_array = set2()
         start = time.time() * 1000
-        bubble_sort(array)
+        bubble_sort(set_array)
         end = time.time() * 1000
         elapsed = end - start
         print(elapsed)

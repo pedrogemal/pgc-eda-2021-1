@@ -42,7 +42,7 @@ fn main() {
     unsafe {
         for _x in 0..50 {
             let start = Instant::now();
-            merge_sort(&mut SET1);
+            merge_sort(&mut SET2);
             let elapsed = start.elapsed();
             println!("{:?}", elapsed);
         }

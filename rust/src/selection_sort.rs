@@ -19,7 +19,7 @@ fn main() {
     unsafe {
         for _x in 0..50 {
             let start = Instant::now();
-            selection_sort(&mut SET1);
+            selection_sort(&mut SET2);
             let elapsed = start.elapsed();
             println!("{:?}", elapsed);
         }

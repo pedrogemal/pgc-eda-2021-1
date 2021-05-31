@@ -4,6 +4,7 @@ import time
 from constants import *
 from typing import List
 
+
 def merge(arr: List[int], aux: List[int], lo: int, mid: int, hi: int) -> None:
     for x in range(lo, hi + 1):
         aux[x] = arr[x]
@@ -25,6 +26,7 @@ def merge(arr: List[int], aux: List[int], lo: int, mid: int, hi: int) -> None:
             arr[k] = aux[i]
             i += 1
 
+
 def aux_sort(arr: List[int], aux: List[int], lo: int, hi: int) -> None:
     if lo >= hi:
         return
@@ -34,16 +36,17 @@ def aux_sort(arr: List[int], aux: List[int], lo: int, hi: int) -> None:
     aux_sort(arr, aux, mid + 1, hi)
     merge(arr, aux, lo, mid, hi)
 
+
 def merge_sort(arr: List[int]) -> None:
     aux = [0 for _ in range(len(arr))]
     aux_sort(arr, aux, 0, len(arr) - 1)
 
+
 if __name__ == '__main__':
-    for i in range(50):
-        array = set1()
+    for z in range(50):
+        set_array = set2()
         start = time.time() * 1000
-        merge_sort(array)
+        merge_sort(set_array)
         end = time.time() * 1000
         elapsed = end - start
         print(elapsed)
-    print("---")

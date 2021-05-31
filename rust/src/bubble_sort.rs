@@ -16,7 +16,7 @@ fn main() {
     unsafe {
         for _x in 0..50 {
             let start = Instant::now();
-            bubble_sort(&mut SET1);
+            bubble_sort(&mut SET2);
             let elapsed = start.elapsed();
             println!("{:?}", elapsed);
         }

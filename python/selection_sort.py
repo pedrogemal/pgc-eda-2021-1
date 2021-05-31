@@ -4,10 +4,11 @@ import time
 from constants import *
 
 from typing import List, TypeVar
+
 T = TypeVar("T")
 
-def selection_sort(array: List[T]) -> None:
 
+def selection_sort(array: List[T]) -> None:
     for i in range(len(array)):
         minimal = i
 
@@ -17,11 +18,12 @@ def selection_sort(array: List[T]) -> None:
 
         array[i], array[minimal] = array[minimal], array[i]
 
+
 if __name__ == '__main__':
-    for i in range(50):
-        array = set1()
+    for z in range(50):
+        set_array = set2()
         start = time.time() * 1000
-        selection_sort(array)
+        selection_sort(set_array)
         end = time.time() * 1000
         elapsed = end - start
         print(elapsed)

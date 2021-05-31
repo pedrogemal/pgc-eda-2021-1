@@ -1,5 +1,9 @@
 import time
 from constants import *
+import sys
+
+sys.setrecursionlimit(30000)
+
 
 def partition(arr, low, high):
     i = (low - 1)
@@ -13,19 +17,20 @@ def partition(arr, low, high):
     arr[i + 1], arr[high] = arr[high], arr[i + 1]
     return i + 1
 
+
 def quick_sort(arr, low, high):
     if low < high:
-
         pivot_index = partition(arr, low, high)
         quick_sort(arr, low, pivot_index - 1)
         quick_sort(arr, pivot_index + 1, high)
 
+
 if __name__ == '__main__':
-    for i in range(50):
-        array = set1()
-        n = len(array)
+    for z in range(50):
+        set_array = set2()
+        n = len(set_array)
         start = time.time() * 1000
-        quick_sort(array, 0, n - 1)
+        quick_sort(set_array, 0, n - 1)
         end = time.time() * 1000
         elapsed = end - start
         print(elapsed)

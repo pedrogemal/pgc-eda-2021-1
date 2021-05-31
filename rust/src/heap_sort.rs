@@ -40,7 +40,7 @@ fn main() {
     unsafe {
         for _x in 0..50 {
             let start = Instant::now();
-            heap_sort(&mut SET1);
+            heap_sort(&mut SET2);
             let elapsed = start.elapsed();
             println!("{:?}", elapsed);
         }
