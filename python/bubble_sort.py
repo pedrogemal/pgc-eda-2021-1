@@ -3,19 +3,19 @@
 import time
 from constants import *
 
-def bubble_sort(item):
-    n = len(item)
+def bubble_sort(array):
+    n = len(array)
     for i in range(n):
         swapped = False
         for j in range(0, n - i - 1):
-            if item[j] > item[j + 1]:
-                item[j], item[j + 1] = item[j + 1], item[j]
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
                 swapped = True
         if not swapped:
             break
 
 if __name__ == '__main__':
-    for i in range(50):
+    for a in range(50):
         array = set1()
         start = time.time() * 1000
         bubble_sort(array)
